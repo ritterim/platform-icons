@@ -12,7 +12,7 @@ $ npm run start
 
 ## Roadmap
 
-Here's the initial list for Platform UI icons
+Here's the initial list for Platform UI icons. Platform icons are targeting the Ritter Platform, (ritterim.com)[https://ritterim.com], and Medicareful.
 
 ### Accessibility
 
