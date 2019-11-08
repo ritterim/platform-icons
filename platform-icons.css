@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "platform-icons";
+    src: url("./platform-icons.eot?05ccfdbba697d044c768a5062c802e42?#iefix") format("embedded-opentype"),
+url("./platform-icons.woff2?05ccfdbba697d044c768a5062c802e42") format("woff2"),
+url("./platform-icons.woff?05ccfdbba697d044c768a5062c802e42") format("woff"),
+url("./platform-icons.ttf?05ccfdbba697d044c768a5062c802e42") format("truetype"),
+url("./platform-icons.svg?05ccfdbba697d044c768a5062c802e42#platform-icons") format("svg");
+}
+
+i[class^="pui-"]:before, i[class*=" pui-"]:before {
+    font-family: platform-icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.pui-alt-arrow-left:before {
+    content: "\f101";
+}
+.pui-alt-arrow-right:before {
+    content: "\f102";
+}
+.pui-alt-arrow-up:before {
+    content: "\f103";
+}
+.pui-arrow-down:before {
+    content: "\f104";
+}
