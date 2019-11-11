@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 23.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 154 288" style="enable-background:new 0 0 154 288;" xml:space="preserve">
+	 viewBox="0 0 246 288" style="enable-background:new 0 0 246 288;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
 	.st1{fill:none;}
@@ -16,8 +16,14 @@
 	.st10{fill:none;stroke:#000000;stroke-width:24;stroke-linejoin:round;}
 </style>
 <g>
-	<path d="M85.8,234.1c0.3-0.3,0.7-0.6,1-0.9l63.3-63.3c4.9-4.9,4.9-12.8,0-17.7s-12.8-4.9-17.7,0l-42.3,42.3v-130
-		c0-6.9-5.6-12.5-12.5-12.5s-12.5,5.6-12.5,12.5v130l-42.3-42.3c-4.9-4.9-12.8-4.9-17.7,0c-2.4,2.4-3.7,5.6-3.7,8.8s1.2,6.4,3.7,8.8
-		l63.6,63.6C73.5,238.2,80.9,238.4,85.8,234.1z"/>
+	<path d="M232.4,251h-31.1V38.7c0-5.9-4.8-10.7-10.7-10.7H54.9c-5.9,0-10.7,4.8-10.7,10.7V251H13.1c-6.6,0-12.3,5.2-12.4,11.8
+		C0.6,269.5,6,275,12.8,275h220c6.7,0,12.1-5.5,12-12.2C244.6,256.2,239,251,232.4,251z M72,52h101.4c2.1,0,3.8,1.7,3.8,3.8V251
+		h-39.9v-33.9h-30.7V251H68.2V55.8C68.2,53.7,69.9,52,72,52z"/>
+	<rect x="87" y="83" width="27" height="23"/>
+	<rect x="129" y="83" width="27" height="23"/>
+	<rect x="87" y="127" width="27" height="23"/>
+	<rect x="129" y="127" width="27" height="23"/>
+	<rect x="87" y="171" width="27" height="23"/>
+	<rect x="129" y="171" width="27" height="23"/>
 </g>
 </svg>
