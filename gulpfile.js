@@ -41,7 +41,7 @@ function copyStaticAssets() {
 }
 
 function make() {
-  return run('npm run make').exec();
+  return run('npm run build').exec();
 }
 
 function watchFiles() {
