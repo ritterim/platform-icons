@@ -16,15 +16,15 @@ Here's the initial list for Platform UI icons. Platform icons are targeting the 
 
 ### Accessibility
 
-- [ ] eye
-- [ ] eye with line through
-- [ ] help (question mark) outline
-- [ ] help (question mark) solid
-- [ ] info (i) outline
-- [ ] info (i) solid
+- [x] eye
+- [x] eye with line through
+- [x] help (question mark) outline
+- [x] help (question mark) solid
+- [x] info (i) outline
+- [x] info (i) solid
 - [ ] tutorial/learn
-- [ ] universal access
-- [ ] warning (triangle exclamation)
+- [x] universal access
+- [x] warning (triangle exclamation)
 
 ### Arrows
 
@@ -43,7 +43,7 @@ Here's the initial list for Platform UI icons. Platform icons are targeting the 
 
 ### Brands
 
-- [ ] Medicareful
+- [x] Medicareful
 - [x] Twitter
 - [x] Facebook
 - [x] Instagram
@@ -56,10 +56,10 @@ Here's the initial list for Platform UI icons. Platform icons are targeting the 
 
 ### Buildings
 
-- [ ] building single
+- [x] building single
 - [x] building multi
-- [ ] house
-- [ ] hospital
+- [x] house
+- [x] hospital
 
 ### Charts
 
@@ -70,73 +70,73 @@ Here's the initial list for Platform UI icons. Platform icons are targeting the 
 
 ### Communication
 
-- [ ] bullhorn outline
+- [x] bullhorn outline
 - [x] paper airplane outline
-- [ ] paper airplane solid
-- [ ] phone mobile
-- [ ] phone
-- [ ] envelope
-- [ ] envelope solid
-- [ ] book
-- [ ] books
+- [x] paper airplane solid
+- [x] phone mobile
+- [x] phone
+- [x] envelope
+- [x] envelope solid
+- [x] book
+- [x] books
 
 ### Editors
 
 - [x] check
 - [x] check circle outline
-- [ ] check circle solid
+- [x] check circle solid
 - [x] plus
 - [x] plus circle outline
 - [x] plus circle solid
-- [ ] circle outline
+- [x] circle outline
 - [x] circle solid
-- [ ] filter
+- [x] filter
 - [x] save
-- [ ] mouse pointer
-- [ ] cogs
+- [x] mouse pointer
+- [x] cogs
 - [x] gear
 - [x] times
 - [x] folder
 - [x] folder open
-- [ ] trash can outline
+- [x] trash can outline
 - [x] trash can solid
-- [ ] speech bubble
-- [ ] multi speech bubble
-- [ ] lock open
-- [ ] lock closed
+- [x] speech bubble
+- [x] multi speech bubble
+- [x] lock open
+- [x] lock closed
 - [x] bell
-- [ ] bells multi
-- [ ] tag
-- [ ] clock hands inside refresh
-- [ ] cloud upload
-- [ ] cloud download
-- [ ] cloud upload
-- [ ] cloud download
+- [x] bells multi
+- [x] tag
+- [x] clock hands inside refresh
+- [x] cloud upload
+- [x] cloud download
+- [x] cloud upload
+- [x] cloud download
 - [x] upload
 - [x] download
 - [x] redo
 - [x] sync
-- [ ] sync with clock hands inside
-- [ ] paperclip
+- [x] sync with clock hands inside
+- [x] paperclip
 - [x] link external
-- [ ] link
-- [ ] pencil
+- [x] link
+- [x] pencil
 - [x] pencil edit
-- [ ] quill
-- [ ] vertical ellipsis
-- [ ] handshake
-- [ ] gavel
-- [ ] light bulb on
-- [ ] light bulb off
-- [ ] clipboard
-- [ ] clipboard with file
-- [ ] shield
+- [x] quill
+- [x] vertical ellipsis
+- [x] handshake
+- [x] gavel
+- [x] light bulb on
+- [x] light bulb off
+- [x] clipboard
+- [x] clipboard with file
+- [x] shield
 - [x] magnifying glass/search
-- [ ] plug
+- [x] plug
 - [ ] power on
-- [ ] power off
-- [ ] star
-- [ ] star half
+- [x] power off
+- [x] star
+- [x] star half
 - [ ] printer
 - [ ] keyboard
 - [ ] keyboard key
