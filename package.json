@@ -1,12 +1,12 @@
 {
   "name": "@ritterim/platform-icons",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Platform icons, part of the [Platform UI](https://github.com/ritterim/platform-ui) project, are meant as a replacement for our current dependency on Font Awesome.",
   "main": "gulpfile.js",
   "files": [
     "/dist"
   ],
-    "scripts": {
+  "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm install && gulp",
     "build": "icon-font-generator src/svg/*.svg -o dist -n platform-icons --json -p pui --center"
