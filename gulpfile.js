@@ -40,16 +40,16 @@ function copyStaticAssets() {
     .pipe(connect.reload());
 }
 
-function make() {
+function build() {
   return run('npm run build').exec();
 }
 
 function watchFiles() {
-  watch('./src/svg/*', make, copyStaticAssets);
+  watch('./src/svg/*', build, copyStaticAssets);
 }
 
-exports.build = series(make, copyStaticAssets);
-exports.make = make;
+exports.build = series(build, copyStaticAssets);
+exports.build = build;
 exports.serve = serve;
 exports.copyStaticAssets = copyStaticAssets;
-exports.default = parallel(series(make, copyStaticAssets), serve, watchFiles);
+exports.default = parallel(series(build, copyStaticAssets), serve, watchFiles);
