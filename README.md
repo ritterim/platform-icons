@@ -157,13 +157,13 @@ Here's the initial list for Platform UI icons. Platform icons are targeting the 
 
 - [x] file text
 - [x] file award
-- [ ] file add
+- [x] file add
 - [ ] file form
-- [ ] file pdf
-- [ ] file multi (copy)
-- [ ] file signature
-- [ ] filing box/cabinet
-- [ ] file text solid
+- [x] file pdf
+- [x] file multi (copy)
+- [x] file signature
+- [x] filing box/cabinet
+- [x] file text solid
 
 ### Maps
 
