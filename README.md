@@ -167,8 +167,8 @@ Here's the initial list for Platform UI icons. Platform icons are targeting the 
 
 ### Maps
 
-- [ ] map open (tri-fold)
-- [ ] map marker
+- [x] map open (tri-fold)
+- [x] map marker
 
 ### Medical
 
