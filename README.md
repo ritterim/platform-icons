@@ -137,46 +137,46 @@ Here's the initial list for Platform UI icons. Platform icons are targeting the 
 - [x] power off
 - [x] star
 - [x] star half
-- [ ] printer
-- [ ] keyboard
+- [x] printer
+- [x] keyboard
 - [ ] keyboard key
 - [ ] external link small
-- [ ] image
-- [ ] asterisk
-- [ ] menu bars
-- [ ] list
-- [ ] list partially checked
+- [x] image
+- [x] asterisk
+- [x] menu bars
+- [x] list
+- [x] list partially checked
 - [x] calculator
 - [x] calendar
 - [x] clock
 - [x] note outline
-- [ ] note solid
+- [x] note solid
 - [x] ban
 
 ### Files
 
 - [x] file text
 - [x] file award
-- [ ] file add
+- [x] file add
 - [ ] file form
-- [ ] file pdf
-- [ ] file multi (copy)
-- [ ] file signature
-- [ ] filing box/cabinet
-- [ ] file text solid
+- [x] file pdf
+- [x] file multi (copy)
+- [x] file signature
+- [x] filing box/cabinet
+- [x] file text solid
 
 ### Maps
 
-- [ ] map open (tri-fold)
-- [ ] map marker
+- [x] map open (tri-fold)
+- [x] map marker
 
 ### Medical
 
-- [ ] stethoscope
-- [ ] pills
-- [ ] pill bottle
-- [ ] pill bottle solid
-- [ ] Rx
+- [x] stethoscope
+- [x] pills
+- [x] pill bottle
+- [x] pill bottle solid
+- [x] Rx
 
 ### Misc
 
