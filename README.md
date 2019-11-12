@@ -180,20 +180,20 @@ Here's the initial list for Platform UI icons. Platform icons are targeting the 
 
 ### Misc
 
-- [ ] puzzle piece
-- [ ] trophy
-- [ ] binoculars
-- [ ] lightning bolt
-- [ ] rocket
+- [x] puzzle piece
+- [x] trophy
+- [x] binoculars
+- [x] lightning bolt
+- [x] rocket
 - [x] award/ribbon
 - [x] ticket
 - [x]  flag
 
 ### Money
 
-- [ ] dollar
-- [ ] credit card (back)
-- [ ] institution
+- [x] dollar
+- [x] credit card (back)
+- [x] institution
 
 ### User
 
