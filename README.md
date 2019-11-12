@@ -137,20 +137,20 @@ Here's the initial list for Platform UI icons. Platform icons are targeting the 
 - [x] power off
 - [x] star
 - [x] star half
-- [ ] printer
-- [ ] keyboard
+- [x] printer
+- [x] keyboard
 - [ ] keyboard key
 - [ ] external link small
-- [ ] image
-- [ ] asterisk
-- [ ] menu bars
-- [ ] list
-- [ ] list partially checked
+- [x] image
+- [x] asterisk
+- [x] menu bars
+- [x] list
+- [x] list partially checked
 - [x] calculator
 - [x] calendar
 - [x] clock
 - [x] note outline
-- [ ] note solid
+- [x] note solid
 - [x] ban
 
 ### Files
