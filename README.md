@@ -199,11 +199,11 @@ Here's the initial list for Platform UI icons. Platform icons are targeting the 
 
 - [x] user
 - [x] user multi
-- [ ] user circle
-- [ ] user outline
-- [ ] user ID badge (vertical)
-- [ ] license (horizontal ID)
-- [ ] user doctor
+- [x] user circle
+- [x] user outline
+- [x] user ID badge (vertical)
+- [x] license (horizontal ID)
+- [x] user doctor
 
 ### Video/playback
 
