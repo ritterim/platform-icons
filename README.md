@@ -172,11 +172,11 @@ Here's the initial list for Platform UI icons. Platform icons are targeting the 
 
 ### Medical
 
-- [ ] stethoscope
-- [ ] pills
-- [ ] pill bottle
-- [ ] pill bottle solid
-- [ ] Rx
+- [x] stethoscope
+- [x] pills
+- [x] pill bottle
+- [x] pill bottle solid
+- [x] Rx
 
 ### Misc
 
