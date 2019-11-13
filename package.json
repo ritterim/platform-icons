@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm install && gulp",
-    "build": "icon-font-generator src/svg/*.svg -o dist -n platform-icons --json -p pui --center"
+    "build": "icon-font-generator src/svg/*.svg -o dist -n platform-icons --json -p pi --center"
   },
   "repository": {
     "type": "git",
