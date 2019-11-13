@@ -21,13 +21,7 @@ function copyStaticAssets() {
     .pipe(dest('./dist/css'))
     .pipe(dest('./'));
 
-  const fonts = src([
-      './dist/*.eot',
-      './dist/*.ttf',
-      './dist/*.woff',
-      './dist/*.woff2',
-      './dist/*.svg'
-    ])
+  const fonts = src('./dist/*.{eot, ttf, woff, woff2, svg}')
     .pipe(clean())
     .pipe(dest('./dist/fonts'))
     .pipe(dest('./'));
