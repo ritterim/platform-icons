@@ -1,7 +1,6 @@
 const { src, dest, series, parallel } = require('gulp');
 
 const connect = require('gulp-connect');
-const clean = require('gulp-clean');
 const rename = require("gulp-rename");
 const run = require('gulp-run');
 const merge = require('merge-stream');
@@ -10,27 +9,22 @@ const { watch } = require('gulp');
 function serve() {
   connect.server({
     root: './',
-    port: 8001,
+    port: 8002,
     livereload: true
   });
 }
 
 function copyStaticAssets() {
-  const css = src('./dist/*.css')
-    .pipe(clean())
-    .pipe(dest('./dist/css'))
+  const copy = src('./dist/*')
+    .pipe(dest('./dist'))
     .pipe(dest('./'));
 
-  const fonts = src('./dist/*.{eot, ttf, woff, woff2, svg}')
-    .pipe(clean())
-    .pipe(dest('./dist/fonts'))
-    .pipe(dest('./'));
-
+  // for local dev only
   const html = src('./dist/platform-icons.html')
     .pipe(rename('index.html'))
     .pipe(dest('./'));
 
-  return merge(css, fonts, html)
+  return merge(copy, html)
     .pipe(connect.reload());
 }
 
