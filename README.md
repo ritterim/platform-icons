@@ -22,7 +22,7 @@ Here's the initial list for Platform UI icons. Platform icons are targeting the 
 - [x] help (question mark) solid
 - [x] info (i) outline
 - [x] info (i) solid
-- [ ] tutorial/learn
+- [x] tutorial/learn
 - [x] universal access
 - [x] warning (triangle exclamation)
 
@@ -63,10 +63,10 @@ Here's the initial list for Platform UI icons. Platform icons are targeting the 
 
 ### Charts
 
-- [ ] chart bar
-- [ ] chart pie
-- [ ] chart line up
-- [ ] chart line down
+- [x] chart bar
+- [x] chart pie
+- [x] chart line up
+- [x] chart line down
 
 ### Communication
 
@@ -115,6 +115,7 @@ Here's the initial list for Platform UI icons. Platform icons are targeting the 
 - [x] upload
 - [x] download
 - [x] redo
+- [x] share
 - [x] sync
 - [x] sync with clock hands inside
 - [x] paperclip
@@ -133,14 +134,14 @@ Here's the initial list for Platform UI icons. Platform icons are targeting the 
 - [x] shield
 - [x] magnifying glass/search
 - [x] plug
-- [ ] power on
+- [x] power on
 - [x] power off
 - [x] star
 - [x] star half
 - [x] printer
 - [x] keyboard
-- [ ] keyboard key
-- [ ] external link small
+- [x] keyboard key
+- [x] external link small
 - [x] image
 - [x] asterisk
 - [x] menu bars
@@ -158,7 +159,7 @@ Here's the initial list for Platform UI icons. Platform icons are targeting the 
 - [x] file text
 - [x] file award
 - [x] file add
-- [ ] file form
+- [x] file form
 - [x] file pdf
 - [x] file multi (copy)
 - [x] file signature
@@ -176,6 +177,7 @@ Here's the initial list for Platform UI icons. Platform icons are targeting the 
 - [x] pills
 - [x] pill bottle
 - [x] pill bottle solid
+- [x] pill bottle alt
 - [x] Rx
 
 ### Misc
@@ -207,7 +209,8 @@ Here's the initial list for Platform UI icons. Platform icons are targeting the 
 
 ### Video/playback
 
-- [ ] full screen (expand)
-- [ ] play
+- [x] full screen (expand)
+- [x] play
 - [x] play circle
 - [x] play monitor
+- [x] collapse
