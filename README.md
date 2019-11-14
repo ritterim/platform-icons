@@ -63,10 +63,10 @@ Here's the initial list for Platform UI icons. Platform icons are targeting the 
 
 ### Charts
 
-- [ ] chart bar
-- [ ] chart pie
-- [ ] chart line up
-- [ ] chart line down
+- [x] chart bar
+- [x] chart pie
+- [x] chart line up
+- [x] chart line down
 
 ### Communication
 
