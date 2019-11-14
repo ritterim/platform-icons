@@ -207,7 +207,8 @@ Here's the initial list for Platform UI icons. Platform icons are targeting the 
 
 ### Video/playback
 
-- [ ] full screen (expand)
-- [ ] play
+- [x] full screen (expand)
+- [x] play
 - [x] play circle
 - [x] play monitor
+- [x] collapse
