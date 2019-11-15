@@ -1,10 +1,6 @@
+dist/css/platform-icons.css
+dist/webfonts/*
 node_modules/
-dist/
+templates/
+.DS_store
 index.html
-platform-icons.css
-platform-icons.eot
-platform-icons.html
-platform-icons.svg
-platform-icons.ttf
-platform-icons.woff
-platform-icons.woff2

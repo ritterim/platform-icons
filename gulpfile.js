@@ -1,5 +1,6 @@
 const { src, dest, series, parallel } = require('gulp');
 
+const clean = require('gulp-clean');
 const connect = require('gulp-connect');
 const rename = require("gulp-rename");
 const run = require('gulp-run');
@@ -14,13 +15,10 @@ function serve() {
   });
 }
 
-function copyStaticAssets() {
-  const copy = src('./dist/*')
-    .pipe(dest('./dist'))
-    .pipe(dest('./'));
-
+function copyHtml() {
   // for local dev only
-  const html = src('./dist/platform-icons.html')
+  return src('./dist/platform-icons.html')
+    .pipe(clean())
     .pipe(rename('index.html'))
     .pipe(dest('./'));
 
