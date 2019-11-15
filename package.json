@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm install && gulp",
-    "build": "icon-font-generator src/svg/**/*.svg -o dist -n platform-icons -j -p pi --center --height"
+    "build": "icon-font-generator src/svg/**/*.svg -o dist -n platform-icons -j -p pi --center --htmltp templates/html.hbs --csstp templates/css.hbs"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,7 @@
   "homepage": "https://github.com/ritterim/platform-icons#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
     "gulp-connect": "^5.7.0",
     "gulp-rename": "^1.4.0",
     "gulp-run": "^1.7.1",

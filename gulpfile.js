@@ -15,14 +15,30 @@ function serve() {
   });
 }
 
-function copyHtml() {
+function copyStaticAssets() {
+  const webfonts = src([
+      './dist/*.eot',
+      './dist/*.svg',
+      './dist/*.ttf',
+      './dist/*.woff',
+      './dist/*.woff2',
+    ])
+    .pipe(clean())
+    .pipe(dest('./dist/webfonts'))
+    .pipe(dest('./'));
+
+  const css = src('./dist/*.css')
+    .pipe(clean())
+    .pipe(dest('./dist/css'))
+    .pipe(dest('./'));
+
   // for local dev only
-  return src('./dist/platform-icons.html')
+  const html = src('./dist/platform-icons.html')
     .pipe(clean())
     .pipe(rename('index.html'))
     .pipe(dest('./'));
 
-  return merge(copy, html)
+  return merge(css, html, webfonts)
     .pipe(connect.reload());
 }
 
