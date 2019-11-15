@@ -96,6 +96,7 @@ Here's the initial list for Platform UI icons. Platform icons are targeting the 
 - [x] cogs
 - [x] gear
 - [x] times
+- [x] times-solid
 - [x] folder
 - [x] folder open
 - [x] trash can outline
@@ -153,6 +154,7 @@ Here's the initial list for Platform UI icons. Platform icons are targeting the 
 - [x] note outline
 - [x] note solid
 - [x] ban
+- [x] logout
 
 ### Files
 
