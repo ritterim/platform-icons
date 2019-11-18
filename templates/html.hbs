@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>{{ fontName }}</title>
+
+  <link rel="stylesheet" type="text/css" href="https://style.rimdev.io/site-assets/stylesheets/platform-ui.min.css" />
+  <link rel="stylesheet" type="text/css" href="{{ htmlCssRelativePath }}" />
+</head>
+
+<body>
+  <header class="site-header flex--justify-between flex--align-center px-3 py-2 background-white block-container border-b border--color-skyblue">
+    <div class="block block-mobile-4 block-laptop-3 flex flex--justify-start">
+      <a class="flex w-50" href="/">
+        <img class="w-100" src="assets/RitterInsuranceLogo.svg" alt="Ritter Insurance Marketing">
+      </a>
+    </div>
+    <nav class="block block-8 flex flex--justify-end">
+      <a class="text--bold text-navy px-3" href="https://style.ritterim.com">
+        <img class="icon--svg-small" src="assets/ritter-platform.svg" alt="">
+        Ritter Docs
+      </a>
+      <a class="text--bold text-navy px-3" href="https://ritterim.com">
+        <img class="icon--svg-small" src="assets/ritter-website.svg" alt="">
+        Ritterim.com
+      </a>
+    </nav>
+  </header>
+  <main class="pb-4 " aria-label="Content">
+    <div class="crm-banner animated slideInDown fast flex--center-content flex--column pt-6" style="background-image: linear-gradient(to right, white, transparent), url('site-assets/stylesheets/images/style-guide-background.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+      <h1 class="my-4">Welcome to the {{ fontName }}</h1>
+      <p>{{ fontName }} is a companion project to Platform UI</p>
+    </div>
+    <article class="block-container px-6 mx-6 py-4">
+
+      <div class="block-container blocks-px-2 blocks-py-2 tablet-up-4 laptop-up-6">
+        {{# each names }}
+          <div class="block">
+            <div class="pui-card flex--center-content flex--column rounded-1 text-salmon--hover">
+              <span class="flex text--size-xxl text-base py-3 px-3">
+                <i class="{{ ../baseClassNames }} {{ ../classPrefix }}{{ this }}"></i>
+              </span>
+              <div class="pill py-1">{{ ../classPrefix }}{{ this }}</div>
+            </div>
+          </div>
+          {{/ each }}
+      </div>
+
+    </article>
+  </main>
+</body>
+
+</html>

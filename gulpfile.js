@@ -1,5 +1,6 @@
 const { src, dest, series, parallel } = require('gulp');
 
+const clean = require('gulp-clean');
 const connect = require('gulp-connect');
 const rename = require("gulp-rename");
 const run = require('gulp-run');
@@ -15,16 +16,29 @@ function serve() {
 }
 
 function copyStaticAssets() {
-  const copy = src('./dist/*')
-    .pipe(dest('./dist'))
+  const webfonts = src([
+      './dist/*.eot',
+      './dist/*.svg',
+      './dist/*.ttf',
+      './dist/*.woff',
+      './dist/*.woff2',
+    ])
+    .pipe(clean())
+    .pipe(dest('./dist/webfonts'))
+    .pipe(dest('./'));
+
+  const css = src('./dist/*.css')
+    .pipe(clean())
+    .pipe(dest('./dist/css'))
     .pipe(dest('./'));
 
   // for local dev only
   const html = src('./dist/platform-icons.html')
+    .pipe(clean())
     .pipe(rename('index.html'))
     .pipe(dest('./'));
 
-  return merge(copy, html)
+  return merge(css, html, webfonts)
     .pipe(connect.reload());
 }
 
