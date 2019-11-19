@@ -17,9 +17,9 @@
       </a>
     </div>
     <nav class="block block-8 flex flex--justify-end">
-      <a class="text--bold text-navy px-3" href="https://style.ritterim.com">
+      <a class="text--bold text-navy px-3" href="https://style.rimdev.io">
         <img class="icon--svg-small" src="assets/ritter-platform.svg" alt="">
-        Ritter Docs
+        Platform UI
       </a>
       <a class="text--bold text-navy px-3" href="https://ritterim.com">
         <img class="icon--svg-small" src="assets/ritter-website.svg" alt="">
@@ -29,19 +29,22 @@
   </header>
   <main class="pb-4 " aria-label="Content">
     <div class="crm-banner animated slideInDown fast flex--center-content flex--column pt-6" style="background-image: linear-gradient(to right, white, transparent), url('site-assets/stylesheets/images/style-guide-background.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
-      <h1 class="my-4">Welcome to the {{ fontName }}</h1>
+      <h1 class="my-4">Welcome to {{ fontName }}</h1>
       <p>{{ fontName }} is a companion project to Platform UI</p>
     </div>
     <article class="block-container px-6 mx-6 py-4">
 
-      <div class="block-container blocks-px-2 blocks-py-2 tablet-up-4 laptop-up-6">
+      <div class="block-container blocks-px-2 blocks-py-2 tablet-up-4 laptop-up-5">
         {{# each names }}
           <div class="block">
             <div class="pui-card flex--center-content flex--column rounded-1 text-salmon--hover">
               <span class="flex text--size-xxl text-base py-3 px-3">
                 <i class="{{ ../baseClassNames }} {{ ../classPrefix }}{{ this }}"></i>
               </span>
-              <div class="pill py-1">{{ ../classPrefix }}{{ this }}</div>
+              <div class="button icon" data-clipboard-text="<i class='{{ ../classPrefix }}{{ this }}'></i>">
+                <i class="pi-clipboard mr-2 "></i>
+                {{ ../classPrefix }}{{ this }}
+              </div>
             </div>
           </div>
           {{/ each }}
@@ -50,5 +53,13 @@
     </article>
   </main>
 </body>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+<script>
+const clipboard = new ClipboardJS('.button.icon');
+clipboard.on('success', function(e) {
+    e.trigger.setAttribute('data-pui-tooltip', 'Copied!');
+    e.clearSelection();
+    setTimeout(() => e.trigger.removeAttribute('data-pui-tooltip'), 1000);
+});
+</script>
 </html>
