@@ -9,7 +9,7 @@ const { watch } = require('gulp');
 
 function serve() {
   connect.server({
-    root: './',
+    root: './site',
     port: 8002,
     livereload: true
   });
@@ -25,33 +25,38 @@ function copyStaticAssets() {
     ])
     .pipe(clean())
     .pipe(dest('./dist/webfonts'))
-    .pipe(dest('./'));
+    .pipe(dest('./site'));
 
   const css = src('./dist/*.css')
     .pipe(clean())
     .pipe(dest('./dist/css'))
-    .pipe(dest('./'));
+    .pipe(dest('./site'));
+  
+  const platformUiCss = src('./node_modules/@ritterim/platform-ui/dist/platform-ui.min.css')
+    .pipe(dest('./site'));
+
+  const siteAssets = src('./assets/**/*', { base: '.' })
+    .pipe(dest('./site'));
 
   // for local dev only
   const html = src('./dist/platform-icons.html')
     .pipe(clean())
     .pipe(rename('index.html'))
-    .pipe(dest('./'));
+    .pipe(dest('./site'));
 
-  return merge(css, html, webfonts)
+  return merge(css, platformUiCss, html, siteAssets, webfonts)
     .pipe(connect.reload());
 }
 
-function build() {
-  return run('npm run build').exec();
+function generateAssets() {
+  return run('npm run generate-assets').exec();
 }
 
 function watchFiles() {
-  watch('./src/svg/*', build, copyStaticAssets);
+  watch('./src/svg/*', generateAssets, copyStaticAssets);
 }
 
-exports.build = series(build, copyStaticAssets);
-exports.build = build;
+exports.build = series(generateAssets, copyStaticAssets);
 exports.serve = serve;
 exports.copyStaticAssets = copyStaticAssets;
-exports.default = parallel(series(build, copyStaticAssets), serve, watchFiles);
+exports.default = parallel(series(generateAssets, copyStaticAssets), serve, watchFiles);
