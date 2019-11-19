@@ -5,7 +5,18 @@ const connect = require('gulp-connect');
 const rename = require("gulp-rename");
 const run = require('gulp-run');
 const merge = require('merge-stream');
+const header = require('gulp-header');
+const pjson = require('./package.json');
 const { watch } = require('gulp');
+const year = new Date().getFullYear();
+const piHeader = ['/*!',
+  '  Platform Icons v' + pjson.version + ' | ' + pjson.name + '\n',
+  '  ' + pjson.description + ' (' + pjson.homepage + ')',
+  '  ©' + year + ' ' + pjson.author,
+  '  ' + pjson.bugs.url,
+  '  Released under the ' + pjson.license + ' license.',
+  '*/',
+  ''].join('\n');
 
 function serve() {
   connect.server({
@@ -29,6 +40,7 @@ function copyStaticAssets() {
 
   const css = src('./dist/*.css')
     .pipe(clean())
+    .pipe(header(piHeader))
     .pipe(dest('./dist/css'))
     .pipe(dest('./site'));
   
