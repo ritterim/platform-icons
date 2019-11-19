@@ -1,6 +1,6 @@
 {
   "name": "@ritterim/platform-icons",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Platform icons, part of the [Platform UI](https://github.com/ritterim/platform-ui) project, are meant as a replacement for our current dependency on Font Awesome.",
   "main": "gulpfile.js",
   "files": [
@@ -28,15 +28,19 @@
   },
   "homepage": "https://github.com/ritterim/platform-icons#readme",
   "devDependencies": {
+    "autoprefixer": "^9.7.2",
+    "cssnano": "^4.1.10",
     "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
     "gulp-connect": "^5.7.0",
+    "gulp-header": "^2.0.9",
+    "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
     "gulp-run": "^1.7.1",
     "merge-stream": "^2.0.0"
   },
   "dependencies": {
-    "@ritterim/platform-ui": "^0.9.0",
+    "@ritterim/platform-ui": "^0.9.21",
     "icon-font-generator": "^2.1.10",
     "semver": "^6.3.0"
   }

@@ -4,8 +4,22 @@ const clean = require('gulp-clean');
 const connect = require('gulp-connect');
 const rename = require("gulp-rename");
 const run = require('gulp-run');
+const autoprefixer = require('autoprefixer');
+const nano = require('cssnano');
+const postcss = require('gulp-postcss');
 const merge = require('merge-stream');
+const header = require('gulp-header');
+const pjson = require('./package.json');
 const { watch } = require('gulp');
+const year = new Date().getFullYear();
+const piHeader = ['/*!',
+  '  Platform Icons v' + pjson.version + ' | ' + pjson.name + '\n',
+  '  ' + pjson.description + ' (' + pjson.homepage + ')',
+  '  ©' + year + ' ' + pjson.author,
+  '  ' + pjson.bugs.url,
+  '  Released under the ' + pjson.license + ' license.',
+  '*/',
+  ''].join('\n');
 
 function serve() {
   connect.server({
@@ -27,8 +41,11 @@ function copyStaticAssets() {
     .pipe(dest('./dist/webfonts'))
     .pipe(dest('./site'));
 
-  const css = src('./dist/*.css')
+  const css = src('./dist/platform-icons.css')
     .pipe(clean())
+    .pipe(postcss([autoprefixer(), nano()]))
+    .pipe(header(piHeader))
+    .pipe(rename('platform-icons.min.css'))
     .pipe(dest('./dist/css'))
     .pipe(dest('./site'));
   
@@ -41,6 +58,9 @@ function copyStaticAssets() {
   // for local dev only
   const html = src('./dist/platform-icons.html')
     .pipe(clean())
+    .pipe(header(`
+      <script>var piVersion = '${pjson.version}';</script>
+    `))
     .pipe(rename('index.html'))
     .pipe(dest('./site'));
 

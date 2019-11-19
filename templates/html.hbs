@@ -6,7 +6,7 @@
   <title>{{ fontName }}</title>
 
   <link rel="stylesheet" type="text/css" href="platform-ui.min.css" />
-  <link rel="stylesheet" type="text/css" href="{{ htmlCssRelativePath }}" />
+  <link rel="stylesheet" type="text/css" href="platform-icons.min.css" />
 </head>
 
 <body>
@@ -31,6 +31,7 @@
     <div class="crm-banner animated slideInDown fast flex--center-content flex--column pt-6" style="background-image: linear-gradient(to right, white, transparent), url('site-assets/stylesheets/images/style-guide-background.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
       <h1 class="my-4">Welcome to {{ fontName }}</h1>
       <p>{{ fontName }} is a companion project to Platform UI</p>
+      <p id="pi-version"></p>
     </div>
     <article class="block-container px-6 mx-6 py-4">
 
@@ -61,5 +62,9 @@ clipboard.on('success', function(e) {
     e.clearSelection();
     setTimeout(() => e.trigger.removeAttribute('data-pui-tooltip'), 1000);
 });
+if(piVersion) {
+  var versionEl = document.getElementById('pi-version');
+  if(versionEl) versionEl.innerHTML = 'Version ' + piVersion;
+}
 </script>
 </html>
