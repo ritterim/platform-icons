@@ -17,6 +17,19 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+{{! Icon sizing }}
+.{{ classPrefix }}sm {
+    font-size: .875em;
+}
+.{{ classPrefix }}lg {
+    font-size: 1.33em;
+}
+.{{ classPrefix }}xl, .{{ classPrefix }}2x {
+    font-size: 2em;
+}
+.{{ classPrefix }}xxl, .{{ classPrefix }}3x {
+    font-size: 3em;
+}
 
 {{# each codepoints }}
 {{# if ../baseSelector }}
