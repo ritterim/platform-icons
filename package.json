@@ -28,10 +28,13 @@
   },
   "homepage": "https://github.com/ritterim/platform-icons#readme",
   "devDependencies": {
+    "autoprefixer": "^9.7.2",
+    "cssnano": "^4.1.10",
     "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
     "gulp-connect": "^5.7.0",
     "gulp-header": "^2.0.9",
+    "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
     "gulp-run": "^1.7.1",
     "merge-stream": "^2.0.0"
