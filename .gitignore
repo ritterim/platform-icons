@@ -2,10 +2,4 @@ dist/css/*.css
 dist/webfonts/*
 node_modules/
 .DS_store
-index.html
-platform-icons.css
-platform-icons.eot
-platform-icons.svg
-platform-icons.ttf
-platform-icons.woff
-platform-icons.woff2
+site/

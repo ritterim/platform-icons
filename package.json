@@ -9,7 +9,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm install && gulp",
-    "build": "icon-font-generator src/svg/**/*.svg -o dist -n platform-icons -j -p pi --center --htmltp templates/html.hbs --csstp templates/css.hbs"
+    "generate-assets": "icon-font-generator src/svg/**/*.svg -o dist -n platform-icons -j -p pi --center --htmltp templates/html.hbs --csstp templates/css.hbs",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,7 @@
     "merge-stream": "^2.0.0"
   },
   "dependencies": {
+    "@ritterim/platform-ui": "^0.9.0",
     "icon-font-generator": "^2.1.10",
     "semver": "^6.3.0"
   }
