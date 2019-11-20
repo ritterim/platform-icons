@@ -9,6 +9,7 @@ const nano = require('cssnano');
 const postcss = require('gulp-postcss');
 const merge = require('merge-stream');
 const header = require('gulp-header');
+const inject = require('gulp-inject-string');
 const pjson = require('./package.json');
 const { watch } = require('gulp');
 const year = new Date().getFullYear();
@@ -48,19 +49,16 @@ function copyStaticAssets() {
     .pipe(rename('platform-icons.min.css'))
     .pipe(dest('./dist/css'))
     .pipe(dest('./site'));
-  
+
   const platformUiCss = src('./node_modules/@ritterim/platform-ui/dist/platform-ui.min.css')
     .pipe(dest('./site'));
 
   const siteAssets = src('./assets/**/*', { base: '.' })
     .pipe(dest('./site'));
 
-  // for local dev only
   const html = src('./dist/platform-icons.html')
     .pipe(clean())
-    .pipe(header(`
-      <script>var piVersion = '${pjson.version}';</script>
-    `))
+    .pipe(inject.before('</head>', '\n<script>var piVersion = "'  + pjson.version + '";</script>\n'))
     .pipe(rename('index.html'))
     .pipe(dest('./site'));
 
