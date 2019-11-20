@@ -1,7 +1,7 @@
 {
   "name": "@ritterim/platform-icons",
   "version": "0.3.1",
-  "description": "Platform icons, part of the [Platform UI](https://github.com/ritterim/platform-ui) project, are meant as a replacement for our current dependency on Font Awesome.",
+  "description": "Platform icons are part of the [Platform UI](https://github.com/ritterim/platform-ui) project from Ritter Insurance Marketing",
   "main": "gulpfile.js",
   "files": [
     "/dist"
@@ -21,7 +21,7 @@
     "icon fonts",
     "fonts"
   ],
-  "author": "RIMdev",
+  "author": "Ritter Insurance Marketing",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ritterim/platform-icons/issues"
@@ -34,6 +34,7 @@
     "gulp-clean": "^0.4.0",
     "gulp-connect": "^5.7.0",
     "gulp-header": "^2.0.9",
+    "gulp-inject-string": "^1.1.2",
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
     "gulp-run": "^1.7.1",
