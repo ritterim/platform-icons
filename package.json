@@ -1,6 +1,6 @@
 {
   "name": "@ritterim/platform-icons",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Platform icons are part of the [Platform UI](https://github.com/ritterim/platform-ui) project from Ritter Insurance Marketing",
   "main": "gulpfile.js",
   "files": [
