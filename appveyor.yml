@@ -20,6 +20,11 @@ cache:
 
 test: off
 
+artifacts:
+  - path: ./icons.zip
+    name: Icons
+    type: Zip
+
 deploy:
   - provider: Environment
     name: Azure App Service Zip (Development)
