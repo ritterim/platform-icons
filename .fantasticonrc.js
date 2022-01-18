@@ -1,5 +1,5 @@
 module.exports = {
-  inputDir: './src/optimized-icons', // (required)
+  inputDir: './src/icons/svg/', // (required)
   outputDir: './src/generated', // (required)
   fontTypes: ['ttf', 'woff', 'woff2'],
   assetTypes: ['scss'],
