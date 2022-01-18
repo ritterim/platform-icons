@@ -15,9 +15,6 @@ before_build:
 build_script:
   - ./build.cmd
 
-after_build:
-  - ps: ./after_build.ps1
-
 cache:
   - node_modules -> package.json, package-lock.json
 
