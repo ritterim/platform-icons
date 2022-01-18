@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build:svgs": "svgo ./src/icons/svg/**/*.svg -o ./src/optimized-icons",
+    "build:svgs": "svgo -f ./src/icons/ -o ./src/optimized-icons",
     "build:font": "fantasticon",
     "build:vite": "vite build",
     "start": "npm-run-all build:svgs build:font --parallel dev",
