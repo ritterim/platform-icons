@@ -1,7 +1,26 @@
 # Platform Icons
 Separate package for [Platform UI](https://github.com/ritterim/platform-ui) Icons
 ## How to use
-- In your project, install the Platform Icons package via npm or CDN (not yet available!)
+### CDN Usage
+- In your projects `<head>` section, include one of the following lines:
+
+```html
+<!-- UNPKG -->
+<link rel="stylesheet" href="https://unpkg.com/@ritterim/platform-icons/dist/style.css"/>
+
+<!-- JSDELIVR -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ritterim/platform-icons/dist/style.css"/>
+
+<!-- Skypack -->
+<link rel="stylesheet" href="https://cdn.skypack.dev/@ritterim/platform-icons/dist/style.css"/>
+```
+### NPM Installation
+- In your project, install the Platform Icons package via npm
+
+```
+npm install @ritterim/platform-icons
+```
+
 - Include in your HTML or import into your stylesheet
 ```html
 <!-- index.html -->
@@ -22,8 +41,8 @@ import 'path/to/node_modules/@ritterim/platform-icons/dist/style.css'
 1. Clone repo
 2. Navigate into the repo folder
 3. Run `npm install` to install dependencies
-4. To start dev server, run `npm start`
-5. To build, run `npm run build`
+4. After installing dependencies, build the project by running `npm run build`
+5. To start dev server, run `npm start`
 6. To create package, run `npm run pack`
 
 ## Dependencies
