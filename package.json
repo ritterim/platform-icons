@@ -13,8 +13,8 @@
     "build:svgs": "svgo -f ./src/icons/ -o ./src/optimized-icons",
     "build:font": "fantasticon",
     "build:vite": "vite build",
-    "start": "npm-run-all build:svgs build:font --parallel dev",
-    "build": "npm-run-all build:*",
+    "start": "run-s build:svgs build:font dev",
+    "build": "run-s build:*",
     "preview": "vite preview"
   },
   "repository": {
