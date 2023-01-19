@@ -45,6 +45,37 @@ import 'path/to/node_modules/@ritterim/platform-icons/dist/style.css'
 5. To start dev server, run `npm start`
 6. To create package, run `npm run pack`
 
+## SVG Setup for Contributing
+
+Some notes on svg setup
+
+| source | default |
+|---|---|
+| artboard | 4" x 4" |
+| main stroke | 24pt |
+| auxiliary stroke | 18pt |
+| corner | .15" |
+| join |	round |
+
+ - Use compound paths (remember, there is no white 😜)
+ - Expand to outlines 
+
+## Codepoints
+
+Codepoints are the hexadecimal pointer to an icon. Here, they're used to target icons in CSS using `:before`:
+
+```html
+<i class="pi-platfrom-ui"></i>
+
+<style>
+  .pi-platform-ui:before {
+    content: "\f18f";
+  }
+</style>
+```
+
+Each time the icon set is generated there's a chance these pointers may shift. To avoid this, we copy `/generated/platform-icons.json` map to `reserved-codepoints.json` to maintain the current label-to-codepoint map so codepoints don't change. 
+
 ## Dependencies
 - [SVGO](https://github.com/svg/svgo) - used to optimize all SVG icons
 - [Fantasticon](https://github.com/tancredi/fantasticon) - used to build icon fonts
@@ -52,3 +83,4 @@ import 'path/to/node_modules/@ritterim/platform-icons/dist/style.css'
   - Vite Plugins:
     - [vite-plugin-banner](https://github.com/chengpeiquan/vite-plugin-banner) - used to prepend licensing info
     - [rollup-plugin-copy](https://github.com/vladshcherbin/rollup-plugin-copy) - used to copy generated font files to the public directory
+    - [vite-plugin-handlebars](https://github.com/alexlafroscia/vite-plugin-handlebars)- used to run the handlebars templates

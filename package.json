@@ -34,7 +34,7 @@
   "homepage": "https://github.com/ritterim/platform-icons#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.2",
-    "fantasticon": "^1.2.3",
+    "fantasticon": "^2.0.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.5",
     "postcss-cli": "^9.1.0",
@@ -42,6 +42,7 @@
     "sass": "^1.45.2",
     "svgo": "^2.8.0",
     "vite": "^2.7.2",
-    "vite-plugin-banner": "^0.2.0"
+    "vite-plugin-banner": "^0.2.0",
+    "vite-plugin-handlebars": "^1.6.0"
   }
 }
