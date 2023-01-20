@@ -2,7 +2,7 @@ environment:
   matrix:
     - nodejs_version: STABLE
       configuration: publish
-    - nodejs_version: LTS
+    - nodejs_version: 16
 
 install:
   - ps: Install-Product node $env:nodejs_version
