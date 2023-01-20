@@ -1,1 +1,1 @@
-import './src/platform-icons.scss'
+import './public/platform-icons.css'
