@@ -34,7 +34,7 @@
   "homepage": "https://github.com/ritterim/platform-icons#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.2",
-    "fantasticon": "^2.0.0",
+    "fantasticon": "^1.2.3",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.5",
     "postcss-cli": "^9.1.0",
