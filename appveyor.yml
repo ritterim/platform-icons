@@ -1,6 +1,10 @@
 environment:
   matrix:
     - nodejs_version: LTS
+      configuration: publish
+  
+  NPM_TOKEN:
+    secure: lyc/Fqx6ERTjiCoQoZuEQURQuo+7UP0M1bQJW/HXa+zb8Ly6qRDTY7xci5HJGpUU    
 
 install:
   - ps: Install-Product node $env:nodejs_version
