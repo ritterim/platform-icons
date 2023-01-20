@@ -24,10 +24,6 @@ export default defineConfig({
     handlebars(),
     copy({
       targets: [
-        { src: './src/generated/platform-icons.ttf', dest: './public' },
-        { src: './src/generated/platform-icons.woff', dest: './public' },
-        { src: './src/generated/platform-icons.woff2', dest: './public' },
-        { src: './src/generated/platform-icons.html', dest: './public' },
         { src: './src/generated/platform-icons.json', dest: './src', rename: 'reserved-codepoints.json' }
       ],
     }),
@@ -36,7 +32,13 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, 'main.js'),
       name: 'PlatformIcons',
-      fileName: (format) => `platform-icons.${format}.js`,
+      fileName: 'platform-icons',
+      formats: ['umd'],
     },
+    rollupOptions: {
+      output: {
+        assetFileNames: "platform-icons.[ext]",
+      },
+    }
   },
 });
