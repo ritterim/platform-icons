@@ -1,10 +1,9 @@
 # Ignore generated files
-src/generated/*
-!src/generated/.gitkeep
 src/optimized-icons/*.svg
 !src/optimized-icons/.gitkeep
 
 public/*
+!public/.gitkeep
 
 node_modules
 .DS_Store
