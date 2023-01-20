@@ -1,4 +1,4 @@
-const codepoint = require('./src/reserved-codepoints.json')
+const codepoint = require('./src/reserved-codepoints.json');
 module.exports = {
   inputDir: './src/optimized-icons', // (required)
   outputDir: './src/generated', // (required)
