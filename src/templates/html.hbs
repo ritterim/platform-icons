@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ name }}</title>
+
+    <link rel="stylesheet" href="/dist/style.css">
+
+    <style>
+        :root {
+            --purple: #32225d;
+            --light-purple: #604d9d;
+            --lavender: #e5e5fa;
+        }
+        body {
+            font-family: sans-serif;
+            color: #333;
+            padding: 3rem;
+            text-align: center;
+        }
+        h1 { 
+            color: var(--purple);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .preview {
+            width: 6rem;
+            display: inline-flex;
+            flex-direction: column;
+            margin: .5rem;
+        }
+        .inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--lavender);
+            border-radius: .5rem .5rem 0 0;
+            color: inherit;
+            font-size: 2rem;
+            line-height: 2.5;
+        }
+        .label {
+            background: var(--light-purple);
+            border-radius: 0 0 .5rem .5rem;
+            color: white;
+            cursor: pointer;
+            font-size: .8rem;
+            font-family: inherit;
+            white-space: nowrap;
+            overflow: hidden;
+            padding: .5rem;
+            text-overflow: ellipsis;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="{{ name }}.css" />
+</head>
+<body>
+    <h1><i class="pi-platform-ui"></i>{{ name }}</h1>
+    {{# each assets }}
+        <div class="preview">
+            <span class="inner">
+                <{{ ../tag }} class="{{ ../prefix }}-{{ @key }}"></{{ ../tag }}>
+            </span>
+            <span class="label" title="{{ ../prefix }}-{{ @key }} - &bsol;{{ codepoint (lookup ../codepoints @key) }}">
+                {{ ../prefix }}-{{ @key }}
+                <br>
+                &bsol;{{ codepoint (lookup ../codepoints @key) }} 
+            </span>
+        </div>
+    {{/ each }}
+</body>
+</html>

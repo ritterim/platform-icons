@@ -1,7 +1,5 @@
 environment:
   matrix:
-    - nodejs_version: STABLE
-      configuration: publish
     - nodejs_version: LTS
 
 install:
@@ -17,31 +15,17 @@ build_script:
 
 cache:
   - node_modules -> package.json, package-lock.json
+  - '%APPDATA%\npm-cache'
 
 test: off
 
-artifacts:
-  - path: ./icons.zip
-    name: Icons
-    type: Zip
-
-deploy:
-  - provider: Environment
-    name: Azure App Service Zip (Development)
-    artifact: Icons
-    slot: staging
-    app_name: rim-icons-east-dev
+deploy_script:
+  - ps: |
+      if ($ENV:CONFIGURATION -eq "publish")
+      {
+        "//registry.npmjs.org/:_authToken=`$`{NPM_TOKEN`}" | Out-File (Join-Path $ENV:APPVEYOR_BUILD_FOLDER ".npmrc") -Encoding UTF8
+        iex "npm pack"
+        iex "npm publish"
+      }
     on:
       branch: master
-      configuration: publish
-
-after_deploy:
-    - ps: |
-        if ($ENV:CONFIGURATION -eq "publish")
-        {
-          "@ritterim:registry=https://ritterim.myget.org/F/npm/npm/`r`n//ritterim.myget.org/F/npm/npm/:_authToken=`$`{MYGET_TOKEN`}" | Out-File (Join-Path $ENV:APPVEYOR_BUILD_FOLDER ".npmrc") -Encoding UTF8
-          iex "npm pack"
-          iex "npm publish"
-        }
-      on:
-        branch: master

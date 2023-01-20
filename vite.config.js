@@ -3,6 +3,7 @@ const { defineConfig } = require('vite');
 const path = require('path');
 import banner from 'vite-plugin-banner';
 import copy from 'rollup-plugin-copy';
+import handlebars from 'vite-plugin-handlebars';
 const pjson = require('./package.json');
 const year = new Date().getFullYear();
 
@@ -20,11 +21,14 @@ const puiHeader = [
 export default defineConfig({
   plugins: [
     banner(puiHeader),
+    handlebars(),
     copy({
       targets: [
         { src: './src/generated/platform-icons.ttf', dest: './public' },
         { src: './src/generated/platform-icons.woff', dest: './public' },
         { src: './src/generated/platform-icons.woff2', dest: './public' },
+        { src: './src/generated/platform-icons.html', dest: './public' },
+        { src: './src/generated/platform-icons.json', dest: './src', rename: 'reserved-codepoints.json' }
       ],
     }),
   ],
