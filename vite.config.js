@@ -24,7 +24,7 @@ export default defineConfig({
     handlebars(),
     copy({
       targets: [
-        { src: './src/generated/platform-icons.json', dest: './src', rename: 'reserved-codepoints.json' }
+        { src: './public/platform-icons.json', dest: './src', rename: 'reserved-codepoints.json' }
       ],
     }),
   ],
