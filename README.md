@@ -6,13 +6,13 @@ Separate package for [Platform UI](https://github.com/ritterim/platform-ui) Icon
 
 ```html
 <!-- UNPKG -->
-<link rel="stylesheet" href="https://unpkg.com/@ritterim/platform-icons/dist/style.css"/>
+<link rel="stylesheet" href="https://unpkg.com/@ritterim/platform-icons/dist/platform-icons.css"/>
 
 <!-- JSDELIVR -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ritterim/platform-icons/dist/style.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ritterim/platform-icons/dist/platform-icons.css"/>
 
 <!-- Skypack -->
-<link rel="stylesheet" href="https://cdn.skypack.dev/@ritterim/platform-icons/dist/style.css"/>
+<link rel="stylesheet" href="https://cdn.skypack.dev/@ritterim/platform-icons/dist/platform-icons.css"/>
 ```
 ### NPM Installation
 - In your project, install the Platform Icons package via npm
@@ -24,12 +24,12 @@ npm install @ritterim/platform-icons
 - Include in your HTML or import into your stylesheet
 ```html
 <!-- index.html -->
-<link rel="stylesheet" href="path/to/node_modules/@ritterim/platform-icons/dist/style.css"/>
+<link rel="stylesheet" href="path/to/node_modules/@ritterim/platform-icons/dist/platform-icons.css"/>
 ```
 
 ```css
 /* style.css */
-import 'path/to/node_modules/@ritterim/platform-icons/dist/style.css'
+import 'path/to/node_modules/@ritterim/platform-icons/dist/platform-icons.css'
 ```
 
 - Use icons in your HTML:
@@ -74,7 +74,7 @@ Codepoints are the hexadecimal pointer to an icon. Here, they're used to target 
 </style>
 ```
 
-Each time the icon set is generated there's a chance these pointers may shift. To avoid this, we copy `/generated/platform-icons.json` map to `reserved-codepoints.json` to maintain the current label-to-codepoint map so codepoints don't change. 
+Each time the icon set is generated there's a chance these pointers may shift. To avoid this, we copy `./public/platform-icons.json` map to `reserved-codepoints.json` to maintain the current label-to-codepoint map so codepoints don't change. 
 
 ## Dependencies
 - [SVGO](https://github.com/svg/svgo) - used to optimize all SVG icons
