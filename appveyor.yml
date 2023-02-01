@@ -31,4 +31,14 @@ deploy_script:
         iex "npm publish --access public"
       }
     on:
+      branch: master  
+  - ps: |
+      if ($ENV:CONFIGURATION -eq "publish")
+      {
+        "@ritterim:registry=https://ritterim.myget.org/F/npm/npm/`r`n//ritterim.myget.org/F/npm/npm/:_authToken=`$`{MYGET_TOKEN`}" | Out-File (Join-Path $ENV:APPVEYOR_BUILD_FOLDER ".npmrc") -Encoding UTF8
+        iex "npm pack"
+        iex "npm publish"
+      }  
+    on:
       branch: master
+      
