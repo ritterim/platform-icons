@@ -21,12 +21,7 @@ const puiHeader = [
 export default defineConfig({
   plugins: [
     banner(puiHeader),
-    handlebars(),
-    copy({
-      targets: [
-        { src: './public/platform-icons.json', dest: './src', rename: 'reserved-codepoints.json' }
-      ],
-    }),
+    handlebars()
   ],
   build: {
     lib: {

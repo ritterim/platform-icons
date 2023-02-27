@@ -1,6 +1,6 @@
 {
   "name": "@ritterim/platform-icons",
-  "version": "2.1.6",
+  "version": "2.1.7",
   "description": "Platform icons are part of the [Platform UI](https://github.com/ritterim/platform-ui) project from Ritter Insurance Marketing",
   "files": [
     "dist/platform-icons.css",
