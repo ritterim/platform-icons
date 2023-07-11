@@ -3,7 +3,7 @@ const codepoints = require('./src/platform-icons.json');
 module.exports = {
   inputDir: './src/optimized-icons',
   outputDir: './public',
-  fontTypes: ['ttf', 'woff', 'woff2'],
+  fontTypes: ['woff2'],
   assetTypes: ['html', 'json', 'css'],
   prefix: 'pi',
   tag: 'i',
