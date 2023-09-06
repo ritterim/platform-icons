@@ -26,7 +26,7 @@ jobs:
       gh_actions_secret_passing_passphrase: ${{ secrets.ACTIONS_SECRET_PASSING_PASSPHRASE }}
       gh_app_private_key: ${{ secrets.RIMDEV_NPM_RELEASES_APP_PRIVATE_KEY }}
     with:
-      always_increment_patch_version: false
+      always_increment_patch_version: true
       gh_app_id: ${{ vars.RIMDEV_NPM_RELEASES_APP_APPID }}
       npm_package_name: platform-icons
       run_tests: false
