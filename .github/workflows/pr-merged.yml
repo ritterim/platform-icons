@@ -11,7 +11,7 @@ on:
   # By default, a workflow only runs when a pull_request event's activity type is opened, synchronize, or reopened.
   # We want to run on 'closed' to trigger, but we also have to check if it was merged.
   # That check is: if: github.event.pull_request.merged == true
-  pull_request:
+  pull_request_target:
     types: [ closed ]
     branches:
       - master
