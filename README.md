@@ -1,6 +1,9 @@
 # Platform Icons
+
 Separate package for [Platform UI](https://github.com/ritterim/platform-ui) Icons
+
 ## How to use
+
 ### CDN Usage
 - In your projects `<head>` section, include one of the following lines:
 
