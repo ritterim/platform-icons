@@ -1,6 +1,8 @@
 # Platform Icons
 Separate package for [Platform UI](https://github.com/ritterim/platform-ui) Icons
+
 ## How to use
+
 ### CDN Usage
 - In your projects `<head>` section, include one of the following lines:
 
@@ -14,6 +16,7 @@ Separate package for [Platform UI](https://github.com/ritterim/platform-ui) Icon
 <!-- Skypack -->
 <link rel="stylesheet" href="https://cdn.skypack.dev/@ritterim/platform-icons/dist/platform-icons.css"/>
 ```
+
 ### NPM Installation
 - In your project, install the Platform Icons package via npm
 
@@ -84,3 +87,4 @@ Each time the icon set is generated there's a chance these pointers may shift. T
     - [vite-plugin-banner](https://github.com/chengpeiquan/vite-plugin-banner) - used to prepend licensing info
     - [rollup-plugin-copy](https://github.com/vladshcherbin/rollup-plugin-copy) - used to copy generated font files to the public directory
     - [vite-plugin-handlebars](https://github.com/alexlafroscia/vite-plugin-handlebars)- used to run the handlebars templates
+
