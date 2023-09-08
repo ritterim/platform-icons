@@ -87,4 +87,3 @@ Each time the icon set is generated there's a chance these pointers may shift. T
     - [vite-plugin-banner](https://github.com/chengpeiquan/vite-plugin-banner) - used to prepend licensing info
     - [rollup-plugin-copy](https://github.com/vladshcherbin/rollup-plugin-copy) - used to copy generated font files to the public directory
     - [vite-plugin-handlebars](https://github.com/alexlafroscia/vite-plugin-handlebars)- used to run the handlebars templates
-
